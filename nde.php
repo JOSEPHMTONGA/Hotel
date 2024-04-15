@@ -28,4 +28,10 @@ $final_result = array_sum($results);
 
 echo "Final result: $final_result\n";
 
+// Parallel processing
+$results = parallel_map('compute', $data_chunks);
+
+
+echo "Final result: $final_result\n";
+
 ?>
